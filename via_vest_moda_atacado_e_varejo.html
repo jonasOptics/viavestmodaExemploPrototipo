@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Via Vest Moda | Moda Atacado e Varejo em Manaus - AM</title>
+    <meta name="description" content="Descubra as melhores tendências em moda casual, camisas, calças cargo e sarja no atacado e varejo em Manaus. Visite nossa loja no Flores ou compre direto pelo WhatsApp!">
+    <meta name="keywords" content="moda atacado manaus, roupas atacado e varejo flores manaus, via vest moda, calca cargo atacado manaus, camisas atacado manaus, revenda de roupas manaus">
+    <meta name="author" content="Via Vest Moda">
+    
+    <!-- Open Graph SEO tags -->
+    <meta property="og:title" content="Via Vest Moda | Atacado e Varejo em Manaus - AM">
+    <meta property="og:description" content="Moda casual, calças cargo, sarja e camisas com preços imperdíveis para lojistas e consumidor final. Pedidos via WhatsApp!">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fdf4f5',
+                            100: '#fbe8eb',
+                            500: '#e11d48',
+                            600: '#be123c',
+                            700: '#9f1239',
+                            900: '#881337',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            background-color: #20ba5a;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-rose-500 selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-slate-900 text-slate-100 text-xs sm:text-sm py-2 px-4 text-center font-medium">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-center items-center gap-2">
+            <span><i class="fa-solid fa-location-dot text-rose-500 mr-1"></i> R. Visconde de Utinga, Nº 620 - Flores, Manaus - AM</span>
+            <span class="hidden sm:inline">•</span>
+            <span><i class="fa-brands fa-whatsapp text-emerald-400 mr-1"></i> Atendimento Atacado e Varejo: (92) 99119-3584</span>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="bg-rose-600 text-white font-black text-xl w-10 h-10 rounded-xl flex items-center justify-center shadow-md group-hover:bg-rose-700 transition">
+                    VV
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight text-slate-900">VIA VEST</span>
+                    <span class="block text-xs uppercase tracking-widest text-rose-600 font-semibold">Moda Atacado & Varejo</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+                <a href="#inicio" class="hover:text-rose-600 transition">Início</a>
+                <a href="#diferenciais" class="hover:text-rose-600 transition">Atacado & Varejo</a>
+                <a href="#catalogo" class="hover:text-rose-600 transition">Vitrine de Produtos</a>
+                <a href="#localizacao" class="hover:text-rose-600 transition">Localização</a>
+            </nav>
+
+            <!-- CTA Header -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="https://wa.me/5592991193584?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20roupas%20em%20atacado%20e%20varejo." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-4 py-2.5 rounded-xl text-sm flex items-center gap-2 shadow-sm transition">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Falar no WhatsApp</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-slate-700 focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 px-4 py-4 space-y-3 shadow-lg">
+            <a href="#inicio" class="block font-medium text-slate-700 hover:text-rose-600 py-1">Início</a>
+            <a href="#diferenciais" class="block font-medium text-slate-700 hover:text-rose-600 py-1">Atacado & Varejo</a>
+            <a href="#catalogo" class="block font-medium text-slate-700 hover:text-rose-600 py-1">Vitrine de Produtos</a>
+            <a href="#localizacao" class="block font-medium text-slate-700 hover:text-rose-600 py-1">Localização</a>
+            <div class="pt-2">
+                <a href="https://wa.me/5592991193584?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 rounded-xl text-center flex items-center justify-center gap-2 shadow">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Comprar no WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-rose-950 text-white py-20 lg:py-32">
+        <!-- Background Decorative Elements -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#e11d48_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="container mx-auto px-4 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 bg-rose-500/20 border border-rose-500/30 text-rose-300 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                    <i class="fa-solid fa-fire text-rose-400"></i> Sua nova central de moda em Manaus - AM
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                    Moda com Estilo, Qualidade e <span class="text-rose-500">Preço Justo</span>
+                </h1>
+                <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0">
+                    Trabalhamos com vendas em <strong>Atacado</strong> para lojistas e revendedores, e também no <strong>Varejo</strong>. Variedade incrível em camisas, calças cargo, sarja e moda casual direto de Flores, Manaus.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="https://wa.me/5592991193584?text=Olá!%20Gostaria%20de%20ver%20o%20catálogo%20completo%20de%20atacado." target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-4 rounded-2xl shadow-xl hover:shadow-emerald-600/20 transition flex items-center justify-center gap-3 text-base">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Catálogo Atacado (WhatsApp)</span>
+                    </a>
+                    <a href="#catalogo" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-8 py-4 rounded-2xl transition text-center">
+                        Ver Vitrine Virtual
+                    </a>
+                </div>
+                
+                <!-- Quick Trust Badges -->
+                <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800 text-center lg:text-left">
+                    <div>
+                        <div class="text-2xl font-black text-white">Atacado</div>
+                        <div class="text-xs text-slate-400">Preços especiais para revenda</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-black text-white">Varejo</div>
+                        <div class="text-xs text-slate-400">Tendências para o seu dia a dia</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-black text-rose-400">Manaus</div>
+                        <div class="text-xs text-slate-400">Loja física no bairro Flores</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Image / Card Showcase -->
+            <div class="lg:col-span-5 relative">
+                <div class="relative mx-auto max-w-md bg-gradient-to-tr from-rose-600/30 to-slate-800 p-2 rounded-3xl shadow-2xl border border-white/10">
+                    <img src="https://placehold.co/600x750/1e293b/f43f5e?text=VIA+VEST+MODA\nAtacado+e+Varejo" alt="Via Vest Moda Vitrine" class="rounded-2xl w-full object-cover h-[450px]">
+                    <div class="absolute bottom-6 left-6 right-6 bg-slate-900/90 backdrop-blur-md p-4 rounded-2xl border border-white/10 shadow-lg">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-rose-600 p-3 rounded-xl text-white">
+                                <i class="fa-solid fa-store text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-white text-sm">Visite Nossa Loja Física</h3>
+                                <p class="text-xs text-slate-300">R. Visconde de Utinga, Nº 620 - Flores</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section: Atacado & Varejo -->
+    <section id="diferenciais" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-rose-600 font-bold uppercase tracking-widest text-xs bg-rose-50 px-3 py-1 rounded-full">Modalidades de Atendimento</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Para Lojistas e Consumidores</h2>
+                <p class="text-slate-600 mt-2">Oferecemos a melhor flexibilidade de compras em Manaus, garantindo qualidade superior em peças selecionadas.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Atacado Card -->
+                <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-3xl p-8 lg:p-10 shadow-xl relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-rose-500/10 rounded-bl-full pointer-events-none"></div>
+                    <div>
+                        <div class="inline-block bg-rose-600 text-white font-bold text-xs px-3 py-1 rounded-lg uppercase mb-4 tracking-wider">
+                            Para Revendedores e Lojistas
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold mb-4">Atacado com Alta Margem de Lucro</h3>
+                        <p class="text-slate-300 mb-6 text-sm sm:text-base">
+                            Monte ou reabasteça o estoque da sua loja com peças de alto giro. Condições imperdíveis para compras em quantidade e modelos atualizados semanalmente.
+                        </p>
+                        <ul class="space-y-3 mb-8 text-sm text-slate-200">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-rose-500"></i> Preços diferenciados para revenda
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-rose-500"></i> Grades completas e sortimento atual
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-rose-500"></i> Atendimento personalizado via WhatsApp
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5592991193584?text=Olá!%20Sou%20lojista%20e%20gostaria%20da%20tabela%20de%20preços%20no%20atacado." target="_blank" class="w-full bg-rose-600 hover:bg-rose-700 text-white font-bold py-3.5 px-6 rounded-xl text-center shadow-lg transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Quero Comprar no Atacado</span>
+                    </a>
+                </div>
+
+                <!-- Varejo Card -->
+                <div class="bg-rose-50 border border-rose-100 rounded-3xl p-8 lg:p-10 shadow-sm relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-rose-200/50 rounded-bl-full pointer-events-none"></div>
+                    <div>
+                        <div class="inline-block bg-rose-600 text-white font-bold text-xs px-3 py-1 rounded-lg uppercase mb-4 tracking-wider">
+                            Para Você (Varejo)
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">Moda Casual e Estilo Próprio</h3>
+                        <p class="text-slate-700 mb-6 text-sm sm:text-base">
+                            Renove seu guarda-roupa com peças modernas e confortáveis. Venha nos visitar no bairro Flores ou faça seu pedido rápido direto da sua casa.
+                        </p>
+                        <ul class="space-y-3 mb-8 text-sm text-slate-700">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-rose-600"></i> Peças unitárias com excelente custo-benefício
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-rose-600"></i> Tendências de camisas, sarja e calças cargo
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-rose-600"></i> Atendimento ágil e facilitado
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/5592991193584?text=Olá!%20Gostaria%20de%20ver%20opções%20disponíveis%20no%20varejo." target="_blank" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3.5 px-6 rounded-xl text-center shadow-lg transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Comprar no Varejo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase / Catalog Section -->
+    <section id="catalogo" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-rose-600 font-bold uppercase tracking-widest text-xs bg-rose-100 px-3 py-1 rounded-full">Vitrine Virtual</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Principais Categorias e Produtos</h2>
+                <p class="text-slate-600 mt-2">Confira alguns dos nossos destaques disponíveis. Temos reposição constante de novidades!</p>
+            </div>
+
+            <!-- Categories Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Item 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group border border-gray-100">
+                    <div class="relative h-64 overflow-hidden bg-gray-200">
+                        <img src="https://placehold.co/400x500/cbd5e1/334155?text=Calcas+Cargo" alt="Calças Cargo" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 right-3 bg-rose-600 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow">
+                            Atacado & Varejo
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg text-slate-900 group-hover:text-rose-600 transition">Calças Cargo</h3>
+                        <p class="text-xs text-slate-500 mt-1 mb-4">Modelagem moderna, tecido resistente e caimento perfeito.</p>
+                        <a href="https://wa.me/5592991193584?text=Olá!%20Gostaria%20de%20ver%20modelos%20e%20preços%20das%20Calças%20Cargo." target="_blank" class="w-full bg-slate-100 hover:bg-emerald-600 hover:text-white text-slate-800 font-semibold py-2.5 rounded-xl text-sm flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp"></i> Consultar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group border border-gray-100">
+                    <div class="relative h-64 overflow-hidden bg-gray-200">
+                        <img src="https://placehold.co/400x500/cbd5e1/334155?text=Calcas+de+Sarja" alt="Calças de Sarja" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 right-3 bg-rose-600 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow">
+                            Atacado & Varejo
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg text-slate-900 group-hover:text-rose-600 transition">Calças de Sarja</h3>
+                        <p class="text-xs text-slate-500 mt-1 mb-4">Conforto e elegância para composições casuais ou sociais.</p>
+                        <a href="https://wa.me/5592991193584?text=Olá!%20Gostaria%20de%20ver%20modelos%20e%20preços%20das%20Calças%20de%20Sarja." target="_blank" class="w-full bg-slate-100 hover:bg-emerald-600 hover:text-white text-slate-800 font-semibold py-2.5 rounded-xl text-sm flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp"></i> Consultar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group border border-gray-100">
+                    <div class="relative h-64 overflow-hidden bg-gray-200">
+                        <img src="https://placehold.co/400x500/cbd5e1/334155?text=Camisas+Casuais" alt="Camisas" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 right-3 bg-rose-600 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow">
+                            Atacado & Varejo
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg text-slate-900 group-hover:text-rose-600 transition">Camisas Diversas</h3>
+                        <p class="text-xs text-slate-500 mt-1 mb-4">Ótima variedade de camisas para lojistas e uso cotidiano.</p>
+                        <a href="https://wa.me/5592991193584?text=Olá!%20Gostaria%20de%20ver%20modelos%20e%20preços%20das%20Camisas." target="_blank" class="w-full bg-slate-100 hover:bg-emerald-600 hover:text-white text-slate-800 font-semibold py-2.5 rounded-xl text-sm flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp"></i> Consultar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition group border border-gray-100">
+                    <div class="relative h-64 overflow-hidden bg-gray-200">
+                        <img src="https://placehold.co/400x500/cbd5e1/334155?text=Moda+Casual" alt="Moda Casual" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute top-3 right-3 bg-rose-600 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow">
+                            Atacado & Varejo
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-lg text-slate-900 group-hover:text-rose-600 transition">Moda Casual Completa</h3>
+                        <p class="text-xs text-slate-500 mt-1 mb-4">Looks completos e combinados para o seu dia a dia.</p>
+                        <a href="https://wa.me/5592991193584?text=Olá!%20Gostaria%20de%20ver%20novidades%20de%20moda%20casual." target="_blank" class="w-full bg-slate-100 hover:bg-emerald-600 hover:text-white text-slate-800 font-semibold py-2.5 rounded-xl text-sm flex items-center justify-center gap-2 transition">
+                            <i class="fa-brands fa-whatsapp"></i> Consultar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="https://wa.me/5592991193584?text=Olá!%20Quero%20receber%20o%20catálogo%20completo%20de%20fotos%20e%20preços." target="_blank" class="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-4 rounded-2xl shadow-lg transition text-base">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    <span>Solicitar Catálogo Completo com Preços</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Store Info Section -->
+    <section id="localizacao" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Info -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-rose-600 font-bold uppercase tracking-widest text-xs bg-rose-50 px-3 py-1 rounded-full">Venha nos Conhecer</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Localização Estratégica em Manaus</h2>
+                    <p class="text-slate-600">
+                        Nossa loja física está situada em uma área de fácil acesso, pronta para receber lojistas de toda a região metropolitana e clientes que buscam qualidade.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4 bg-slate-50 p-4 rounded-2xl border border-gray-100">
+                            <div class="bg-rose-600 text-white p-3 rounded-xl mt-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Endereço Completo</h4>
+                                <p class="text-slate-600 text-sm mt-1">R. Visconde de Utinga, N° 620 - Flores<br>Manaus - AM, CEP 69058-750</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 bg-slate-50 p-4 rounded-2xl border border-gray-100">
+                            <div class="bg-emerald-600 text-white p-3 rounded-xl mt-1">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Atendimento & Pedidos</h4>
+                                <p class="text-slate-600 text-sm mt-1">WhatsApp: (92) 99119-3584<br>Atendimento rápido para tirar dúvidas e orçamentos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <a href="https://maps.google.com/?q=R.+Visconde+de+Utinga,+620+-+Flores,+Manaus+-+AM" target="_blank" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold px-6 py-3.5 rounded-xl shadow transition text-sm">
+                            <i class="fa-solid fa-map-location-dot text-rose-500"></i> Abrir no Google Maps
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Map Box Simulation -->
+                <div class="lg:col-span-6">
+                    <div class="bg-slate-200 rounded-3xl h-[400px] overflow-hidden shadow-inner border border-gray-300 relative flex flex-col items-center justify-center p-6 text-center">
+                        <div class="absolute inset-0 bg-slate-800/10 z-0"></div>
+                        <div class="relative z-10 bg-white/90 backdrop-blur-md p-8 rounded-2xl shadow-xl max-w-sm border border-gray-100">
+                            <div class="w-12 h-12 bg-rose-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl shadow-lg">
+                                <i class="fa-solid fa-store"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-900 text-lg">Via Vest Moda</h3>
+                            <p class="text-xs text-slate-600 mt-1">R. Visconde de Utinga, Nº 620 - Flores, Manaus</p>
+                            <a href="https://maps.google.com/?q=R.+Visconde+de+Utinga,+620+-+Flores,+Manaus+-+AM" target="_blank" class="mt-5 block w-full bg-rose-600 hover:bg-rose-700 text-white font-bold py-2.5 rounded-xl text-xs uppercase tracking-wider transition shadow">
+                                Traçar Rota Agora
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="bg-rose-600 text-white font-black text-lg w-8 h-8 rounded-lg flex items-center justify-center">
+                            VV
+                        </div>
+                        <span class="text-white font-extrabold text-lg tracking-tight">VIA VEST MODA</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                        Especializada em atacado e varejo de vestuário em Manaus - AM. Qualidade, preço justo e atendimento humanizado para lojistas e clientes finais.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#inicio" class="hover:text-white transition">Início</a></li>
+                        <li><a href="#diferenciais" class="hover:text-white transition">Atacado e Varejo</a></li>
+                        <li><a href="#catalogo" class="hover:text-white transition">Vitrine de Produtos</a></li>
+                        <li><a href="#localizacao" class="hover:text-white transition">Localização</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Contato Direto</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-400"></i> (92) 99119-3584
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-location-dot text-rose-500 mt-0.5"></i> R. Visconde de Utinga, Nº 620 - Flores, Manaus - AM
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
+                <p>&copy; 2026 Via Vest Moda. Todos os direitos reservados.</p>
+                <p class="mt-2 sm:mt-0">Atacado & Varejo em Manaus - AM</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5592991193584?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido." target="_blank" class="whatsapp-float" aria-label="Falar no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
